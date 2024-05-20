@@ -1,6 +1,6 @@
-resource "helm_release" "this" {
-  name       = "testapplication"
+module "app" {
+  source = "../"
+  name   = "testapplication"
   namespace = "testapp"
-  chart      = "${path.module}/charts/application"
-  wait = false
+  )
 }

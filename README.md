@@ -4,5 +4,5 @@
 
 module "release" {
   source  = "siyabendboral/release/helm"
-  version = "0.1.0"
+  name = "testapplication"
 }
