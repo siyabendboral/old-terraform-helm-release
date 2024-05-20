@@ -9,3 +9,12 @@ variable namespace {
   type = string
   default = ""
 }
+
+
+
+variable values_yaml {
+  description = "value"
+  type = string
+  default = ""
+}
+
