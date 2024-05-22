@@ -1,29 +1,9 @@
 resource "helm_release" "this" {
-  name       =  var.name 
+  name      = var.name
   namespace = var.namespace
-  chart      = "${path.module}/charts/application"
-  wait = false
+  chart     = "${path.module}/charts/application"
+  wait      = false
+  values = [
+    var.values_yaml
+  ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

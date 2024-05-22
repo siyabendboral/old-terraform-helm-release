@@ -1,8 +1,12 @@
-# usage 
- 
-###  Please copy and paste below code  
+# Usage
 
+### Please copy paste below code 
+```
 module "release" {
   source  = "siyabendboral/release/helm"
-  name = "testapplication"
+  name    = "testapplication"
+  namespace = "testapp"
+  values_yaml = <<EOF
+EOF
 }
+```

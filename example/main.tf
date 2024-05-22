@@ -8,6 +8,5 @@ replicaCount: 3
 image:
   repository: nginx
 
-
 EOF
 }

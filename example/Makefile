@@ -1,9 +1,11 @@
-build:	
-	terraform init & terraform apply --auto-approve
+build:
+	terraform init  && terraform apply -auto-approve 
 
-verify:
-	helm list -n testapp
-	kubectl get all -n testapp
+
+v:
+	helm list -n testapp 
+	kubectl get all -n testapp 
+
 
 destroy:
-	terraform init && terraform destroy -auto-approve
+	terraform init  && terraform destroy -auto-approve 
